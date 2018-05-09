@@ -27,10 +27,10 @@
                 }
 
                 this.$emit('onSubmit', this.internalValue);
-                this.clearInput();
+                this.clear();
             },
-            clearInput: function () {
-                this.$refs.input.value = '';
+            clear: function () {
+                this.internalValue = '';
             },
             inputFocus: function () {
                 this.$refs.input.focus();
